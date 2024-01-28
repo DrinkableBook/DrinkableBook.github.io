@@ -1,0 +1,95 @@
+
+body, html {
+  font-family: 'Trebuchet MS', sans-serif;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 36px;
+  position: absolute;
+  color: #42bd00;
+}
+
+.inner_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.calendar {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.forms {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75%;
+  margin-bottom: 5px;
+}
+
+.required {
+  color: red;
+  align-self: right;
+}
+
+form {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+
+select,
+input[type="text"],
+.select2-container--single {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
