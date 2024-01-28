@@ -1,0 +1,79 @@
+body, html {
+    font-family: 'Trebuchet MS', sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center; /* Center the title */
+  }
+  
+  .title h1 {
+    font-size: 36px;
+    color: #42bd00;
+    margin-bottom: 5px; /* Space between title and calendar */
+  }
+  
+  .inner_container {
+    display: flex;
+    justify-content: start; /* Align items to the start horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .calendar {
+    flex: 1; /* Allows the calendar to fill the available horizontal space */
+    margin-right: 50px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally within the buttons container */
+  }
+  
+  /* Rest of your existing CSS */
+  
+  
+  p {
+    font-size: 16px;
+    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Center text */
+  }
+  
+  .pdf_button,
+  .manual_button {
+    font-family: "Trebuchet MS", sans-serif;
+    display: block;
+    margin: 5px auto;
+    padding: 10px 20px;
+    background-color: #42bd00;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #42bd00;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    cursor: pointer;
+  }
+  
+  .pdf_button:hover,
+  .manual_button:hover {
+    color: #42bd00;
+    background-color: #fff;
+    text-decoration: none;
+  }
+  

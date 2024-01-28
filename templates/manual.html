@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORACLE Scheduling</title>
+
+  <!-- jQuery UI CSS (Base Theme) -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="static/styles.css" rel="stylesheet" type="text/css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- jQuery UI JavaScript -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>ORACLE</h1>
+    </div>
+  </div>
+  <div class="inner_container">
+      <div class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=Operation%20Room%20Utilization&mode=WEEK&src=Y19jZjJhYjIxOWQ5OTk3MzZiMmNlZWRmMDg2OThiMzExMWU3ZGM2YzE3ODUwOGQ3YjAyODE0NDE0NGQwMzEyMDFjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y18zZDRiM2Q2NmUwMzhhNGNkNjUwMTllN2FmNjk1MTVhYTA3Mjk3ZmRkNWI2ZWE2ZDExODViYmE4NjM5ZDM0ZjE1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y184OTQxOWJkMWZmZmM5NDE5ZjRlYTY2ZTdjNDY0NTBmMWQ0MGEzNDcwNmNjYWYwOWNmNWFiYjdlNDdjZjM1MGI1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D81B60&color=%23A79B8E&color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="forms">
+        <form method="POST">
+          <label for="procedure_name">Procedure Name:<span class="required">*</span></label>
+          <select id="procedure_name" name="procedure_name" required>
+            <option value="" disabled selected>Select</option>
+          </select>
+  
+          <label for="field">Field:<span class="required">*</span></label>
+          <select id="field" name="field" required>
+            <option value="" disabled selected>Select</option>
+          </select>
+          
+          <label for="or">Operating Room:<span class="required">*</span></label>
+          <select name="or" id="or" required>
+            <option value="" disabled selected>OR #</option>
+            <option value="OR 1">OR 1</option>
+            <option value="OR 2">OR 2</option>
+            <option value="OR 3">OR 3</option>
+          </select>
+  
+          <label for="diagnosis">Diagnosis:<span class="required">*</span></label>
+          <input type="text" id="diagnosis" name="diagnosis" placeholder="Enter here" required>
+  
+          <label for="icd10_code">ICD-10-CM:<span class="required">*</span></label>
+          <input type="text" id="icd10_code" name="icd10_code" placeholder="Enter here" required>
+  
+          <label for="physician">Physician Name:<span class="required">*</span></label>
+          <input type="text" id="physician" name="physician" placeholder="Enter here" required>
+  
+          <label for='date'>Date:<span class="required">*</span></label>
+          <input type="text" id="datepicker" name="date" placeholder="Select a date" required>
+  
+          <label for="start_time">Time:<span class="required">*</span></label>
+          <select id="start_time" name="start_time" required>
+              <option value="" disabled selected>Start time</option>
+          </select>
+          <br>
+          <select id="end_time" name="end_time" required>
+              <option value="" disabled selected>Estimated end time</option>
+          </select>
+          <input type="submit" value="Schedule" id=submitButton>
+        </forms>
+        <div id="results">
+            {% if result %}
+            {% endif %}
+        </div>
+      </div>
+  </div>
+  <script src='static/script.js'></script>
+</body>
+</html>

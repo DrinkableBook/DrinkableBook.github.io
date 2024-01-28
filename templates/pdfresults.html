@@ -1,0 +1,20 @@
+<!DOCTYPE htmnl>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ORACLE Scheduling</title>
+        <link href="static/pdfresults.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Review</h1>
+        <div class="forms">
+            <form action="" method="POST">
+                {% for value in result %}
+                    <input type="text" name="input{{ loop.index }}" value="{{ value }}">
+                {% endfor %}
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
